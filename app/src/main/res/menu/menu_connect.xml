@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/Main_menu1">
+    <item
+        android:id="@+id/item_connect"
+        android:orderInCategory="100"
+        android:title="@string/connect_not"
+        app:showAsAction="ifRoom" />
+    </group>
+
+
+        <item
+            android:id="@+id/item_mode"
+            android:orderInCategory="100"
+            android:title="设定"
+            app:showAsAction="ifRoom" >
+            <menu>
+                <item
+                    android:id="@+id/Mode"
+                    android:orderInCategory="100"
+                    android:title="工作模式"
+                    app:showAsAction="always">
+                    <menu>
+                        <item
+                            android:id="@+id/mode_normal"
+                            android:orderInCategory="100"
+                            android:title="正常"
+                            app:showAsAction="always"/>
+                        <item
+                            android:id="@+id/mode_check"
+                            android:orderInCategory="100"
+                            android:title="阻抗"
+                            app:showAsAction="always"/>
+                        <item
+                            android:id="@+id/mode_test"
+                            android:orderInCategory="100"
+                            android:title="测试模式"
+                            app:showAsAction="always"/>
+
+                    </menu>
+                </item>
+                <item
+                    android:id="@+id/SampleRate"
+                    android:orderInCategory="100"
+                    android:title="采样率"
+                    app:showAsAction="always">
+                    <menu>
+                        <item
+                            android:id="@+id/Rate250"
+                            android:orderInCategory="100"
+                            android:title="250"
+                            app:showAsAction="always"/>
+                        <item
+                            android:id="@+id/Rate500"
+                            android:orderInCategory="100"
+                            android:title="500"
+                            app:showAsAction="always"/>
+                        <item
+                            android:id="@+id/Rate1000"
+                            android:orderInCategory="100"
+                            android:title="1000"
+                            app:showAsAction="always"/>
+
+                    </menu>
+                </item>
+                <item
+                    android:id="@+id/Gain"
+                    android:orderInCategory="100"
+                    android:title="Gain"
+                    app:showAsAction="always"/>
+                <item
+                    android:id="@+id/Serial_output"
+                    android:orderInCategory="100"
+                    android:title="串口数据输出"
+                    app:showAsAction="always">
+                    <menu>
+                        <item
+                            android:id="@+id/serial_yes"
+                            android:orderInCategory="100"
+                            android:title="YES"
+                            app:showAsAction="always"/>
+                        <item
+                            android:id="@+id/serial_no"
+                            android:orderInCategory="100"
+                            android:title="No"
+                            app:showAsAction="always"/>
+
+                    </menu>
+                </item>
+                <item
+                    android:id="@+id/Ble_output"
+                    android:orderInCategory="100"
+                    android:title="蓝牙数据输出"
+                    app:showAsAction="always">
+                    <menu>
+                        <item
+                            android:id="@+id/ble_yes"
+                            android:orderInCategory="100"
+                            android:title="YES"
+                            app:showAsAction="always"/>
+                        <item
+                            android:id="@+id/ble_no"
+                            android:orderInCategory="100"
+                            android:title="No"
+                            app:showAsAction="always"/>
+
+                    </menu>
+                </item>
+                <item
+                    android:id="@+id/SDCard"
+                    android:orderInCategory="100"
+                    android:title="SD卡"
+                    app:showAsAction="always"/>
+                <item
+                    android:id="@+id/Update"
+                    android:orderInCategory="100"
+                    android:title="系统固件更新"
+                    app:showAsAction="always">
+                </item>
+            </menu>
+        </item>
+
+
+</menu>

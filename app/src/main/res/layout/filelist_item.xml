@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/word" />
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/imageView">
+
+                <TextView
+                    android:id="@+id/table_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="textview"
+                    android:textColor="@color/black" />
+
+
+            <TextView
+                    android:id="@+id/file_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textSize="13dp" />
+        </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="47dp"
+        android:background="#e0e0e0" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- title -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp">
+
+
+            <!-- 中：title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="匹兹堡睡眠质量调查问卷(PSQI)"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名：" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="年龄：" />
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="number"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="性别：" />
+
+            <EditText
+                android:id="@+id/sex"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#030303"
+                android:text="*1.近一个月，晚上上床睡觉通常是  " />
+
+            <EditText
+                android:id="@+id/topic1_one"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:gravity="center"
+                android:ems="10"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#030303"
+                android:text="时" />
+
+            <EditText
+                android:id="@+id/topic1_two"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:ems="10"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#030303"
+                android:text="分（24小时制）" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#030303"
+                android:text="*2.近一个月，从上床到入睡通常需要  " />
+
+            <EditText
+                android:id="@+id/topic2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#030303"
+                android:text="分钟" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*3.近一个月，通常早上（相比于上床时间）"
+                android:textColor="#030303" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="当天" />
+
+                <RadioButton
+                    android:id="@+id/tomorrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="第二天" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/topic3_one"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时"
+                android:textColor="#030303" />
+
+            <EditText
+                android:id="@+id/topic3_two"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:ems="10"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#030303"
+                android:text="分起床(24小时制)" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*4.近一个月，每夜通常实际睡眠  "
+                android:textColor="#030303" />
+
+            <EditText
+                android:id="@+id/topic4_one"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小时"
+                android:textColor="#030303" />
+
+            <EditText
+                android:id="@+id/topic4_two"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#030303"
+                android:text="分（不等于卧床时间）" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#030303"
+            android:layout_marginLeft="20dp"
+            android:text="*5.近一个月，入睡困难" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/group5rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="无" />
+
+            <RadioButton
+                android:id="@+id/group5rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="&lt;1次/周" />
+
+            <!--“<”号在xml中为非法字符需要实体引用“&lt;”来代替-->
+            <RadioButton
+                android:id="@+id/group5rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="&lt;1~2次/周" />
+
+            <RadioButton
+                android:id="@+id/group5rb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="≥3次/周" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#030303"
+            android:layout_marginLeft="20dp"
+            android:text="*6.近一个月，夜间易醒或早醒" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/group6rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="无" />
+
+            <RadioButton
+                android:id="@+id/group6rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="&lt;1次/周" />
+
+            <RadioButton
+                android:id="@+id/group6rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="&lt;1~2次/周" />
+
+            <RadioButton
+                android:id="@+id/group6rb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="≥3次/周" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#030303"
+            android:layout_marginLeft="20dp"
+            android:text="*7.近一个月，夜间去厕所" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/group7rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="无" />
+
+            <RadioButton
+                android:id="@+id/group7rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="&lt;1次/周" />
+
+            <RadioButton
+                android:id="@+id/group7rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="&lt;1~2次/周" />
+
+            <RadioButton
+                android:id="@+id/group7rb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="≥3次/周" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#030303"
+            android:layout_marginLeft="20dp"
+            android:text="*8.近一个月，因呼吸不畅而影响睡眠" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/group8rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="无" />
+
+            <RadioButton
+                android:id="@+id/group8rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="&lt;1次/周" />
+
+            <RadioButton
+                android:id="@+id/group8rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="&lt;1~2次/周" />
+
+            <RadioButton
+                android:id="@+id/group8rb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="≥3次/周" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#030303"
+            android:layout_marginLeft="20dp"
+            android:text="*9.近一个月，因咳嗽或鼾声高而影响睡眠" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/group9rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="无" />
+
+            <RadioButton
+                android:id="@+id/group9rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="&lt;1次/周" />
+
+            <RadioButton
+                android:id="@+id/group9rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="&lt;1~2次/周" />
+
+            <RadioButton
+                android:id="@+id/group9rb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="≥3次/周" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#030303"
+            android:layout_marginLeft="20dp"
+            android:text="*10.近一个月，因感觉冷而影响睡眠" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/group10rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="无" />
+
+            <RadioButton
+                android:id="@+id/group10rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="&lt;1次/周" />
+
+            <RadioButton
+                android:id="@+id/group10rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="&lt;1~2次/周" />
+
+            <RadioButton
+                android:id="@+id/group10rb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="≥3次/周" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#030303"
+            android:layout_marginLeft="20dp"
+            android:text="*11.近一个月，因感觉热而影响睡眠" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/group11rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="无" />
+
+            <RadioButton
+                android:id="@+id/group11rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="&lt;1次/周" />
+
+            <RadioButton
+                android:id="@+id/group11rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="&lt;1~2次/周" />
+
+            <RadioButton
+                android:id="@+id/group11rb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="≥3次/周" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#030303"
+            android:layout_marginLeft="20dp"
+            android:text="*12.近一个月，睡觉时做噩梦" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/group12rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="无" />
+
+            <RadioButton
+                android:id="@+id/group12rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="&lt;1次/周" />
+
+            <RadioButton
+                android:id="@+id/group12rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="&lt;1~2次/周" />
+
+            <RadioButton
+                android:id="@+id/group12rb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="≥3次/周" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#030303"
+            android:layout_marginLeft="20dp"
+            android:text="*13.近一个月，睡觉时感觉疼痛不适" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/group13rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="无" />
+
+            <RadioButton
+                android:id="@+id/group13rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="&lt;1次/周" />
+
+            <RadioButton
+                android:id="@+id/group13rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="&lt;1~2次/周" />
+
+            <RadioButton
+                android:id="@+id/group13rb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="≥3次/周" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#030303"
+            android:layout_marginLeft="20dp"
+            android:text="*14.近一个月，有其他影响睡眠的事情" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/group14rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="无" />
+
+            <RadioButton
+                android:id="@+id/group14rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="&lt;1次/周" />
+
+            <RadioButton
+                android:id="@+id/group14rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="&lt;1~2次/周" />
+
+            <RadioButton
+                android:id="@+id/group14rb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="≥3次/周" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#030303"
+            android:layout_marginLeft="20dp"
+            android:text="*15.近一个月，总的来说，您认为自己的睡眠质量" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/group15rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="很好" />
+
+            <RadioButton
+                android:id="@+id/group15rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="较好" />
+
+            <RadioButton
+                android:id="@+id/group15rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="较差" />
+
+            <RadioButton
+                android:id="@+id/group15rb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="很差" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#030303"
+            android:layout_marginLeft="20dp"
+            android:text="*16.近一个月，您用药物催眠的情况" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/group16rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="无" />
+
+            <RadioButton
+                android:id="@+id/group16rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="&lt;1次/周" />
+
+            <RadioButton
+                android:id="@+id/group16rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="&lt;1~2次/周" />
+
+            <RadioButton
+                android:id="@+id/group16rb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="≥3次/周" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#030303"
+            android:layout_marginLeft="20dp"
+            android:text="*17.近一个月，您常感到困倦吗？" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/group17rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="无" />
+
+            <RadioButton
+                android:id="@+id/group17rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="&lt;1次/周" />
+
+            <RadioButton
+                android:id="@+id/group17rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="&lt;1~2次/周" />
+
+            <RadioButton
+                android:id="@+id/group17rb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="≥3次/周" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#030303"
+            android:layout_marginLeft="20dp"
+            android:text="*18.近一个月，您做事情的精力不足吗？" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/group18rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="没有" />
+
+            <RadioButton
+                android:id="@+id/group18rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="偶尔有" />
+
+            <RadioButton
+                android:id="@+id/group18rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="有时有" />
+
+            <RadioButton
+                android:id="@+id/group18rb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="经常有" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="提交" />
+
+    </LinearLayout>
+</ScrollView>

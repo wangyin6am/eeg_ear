@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="channel">
+        <item>全选</item>
+        <item>通道1</item>
+        <item>通道2</item>
+        <item>通道3</item>
+        <item>通道4</item>
+        <item>通道5</item>
+        <item>通道6</item>
+        <item>通道7</item>
+        <item>通道8</item>
+    </string-array>
+</resources>

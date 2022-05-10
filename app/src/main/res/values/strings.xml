@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">EEG</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="not_support">设备不支持BLE，请更换设备</string>
+    <string name="open_success">蓝牙打开成功</string>
+    <string name="open_fail">蓝牙打开失败</string>
+    <string name="connect_not">未连接</string>
+    <string name="connect_ed">已连接</string>
+    <string name="search_device">搜索设备</string>
+    <string name="start">开始</string>
+    <string name="save">保存</string>
+    <string name="confirm">状态确认</string>
+    <string name="stop">停止</string>
+    <string name="set_mtu">设置MTU</string>
+    <string name="quick_start">一键启动</string>
+    <string name="mtu">设定MTU</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
