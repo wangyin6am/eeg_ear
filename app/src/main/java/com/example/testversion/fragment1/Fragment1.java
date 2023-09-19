@@ -387,7 +387,7 @@ public class Fragment1 extends Fragment implements MainActivity.SendValue {
      * 根据阻抗，设置Textview
      */
     public void setResult(){
-        Log.i("measureR", "通道1电阻为：2000 ");
+        Log.i("measure", "setResult! ");
 //        ch_R = measureR(channel_list);
 //        if (ch_R==null){
 //            return;

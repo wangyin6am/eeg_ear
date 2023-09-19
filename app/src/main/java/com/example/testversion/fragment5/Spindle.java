@@ -7,7 +7,6 @@ import androidx.annotation.RequiresApi;
 
 import com.example.testversion.jdsp.filter.Butterworth;
 import com.example.testversion.jdsp.transform.DiscreteFourier;
-import com.example.testversion.jdsp.transform.Hilbert;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -33,18 +32,14 @@ public class Spindle {
         dataFilterd = butter1.bandPassFilter(4,10,16);
         double[] data_filterd2 = dataFilterd.clone();
         // 3、获取希尔伯特变换后信号
-//        FourierTransform.Direction mDirection = FourierTransform.Direction.Forward;
-//        double[] data_hilbert = HilbertTransform.FHT(data_filterd2,mDirection);
-        Hilbert hilbert = new Hilbert(data_filterd2);
-        hilbert.transform();
-        hilbert.getOutput();
-        double[] envelope = hilbert.getAmplitudeEnvelope();
+        FourierTransform.Direction mDirection = FourierTransform.Direction.Forward;
+        double[] data_hilbert = HilbertTransform.FHT(data_filterd2,mDirection);
         // 4、求包络线
-//        double[] envelope = new double[data_filterd2.length];
-//        for(int i=0;i<data_filterd2.length;i++){
-//            envelope[i] = Math.hypot(data_filterd2[i],data_hilbert[i]);
-//        }
-        // 5、求阈值=包络平均值+标准差
+        double[] envelope = new double[data_filterd2.length];
+        for(int i=0;i<data_filterd2.length;i++){
+            envelope[i] = Math.hypot(data_filterd2[i],data_hilbert[i]);
+        }
+        // 5、求 阈值=包络平均值+标准差
         double sum=0,mean=0;
         double powSum=0,sd=0;
         for(double d:envelope){
